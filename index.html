@@ -1,0 +1,571 @@
+<!--Bootstrap amb CDN-->
+<!--<!doctype html>
+<html lang="en">
+  <head>-->
+    <!-- Required meta tags -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+
+    <!-- Fontawesome -->
+    <!--<script src="https://kit.fontawesome.com/1aa06b37ab.js" crossorigin="anonymous"></script>
+
+    <title>Fashion sportwear women NATWOM</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+-->
+
+
+
+
+<!--Bootstrap descarregat a la nostra pàgina-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible"·content="ie-edge">  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/1aa06b37ab.js" crossorigin="anonymous"></script>
+  <title>Fashion sportwear women NATWOM</title>
+</head>
+
+<body>
+<div class="container-fluid">
+
+ <!--HEADER--> 
+  <div class="row align-items-center">
+    <!--Logo--> 
+    <div class="col-sm-2 pt-3">
+        <img class="img-fluid" src="../Sprint4_N1_Ex1 -FormsValidar/img/LogoNatwom.png" alt="logo NatWom">
+    </div>
+
+    <!--Nom comercial empresa-->
+    <div class="col-sm-10 col-lg-7">
+      <h1 class="display-4 text-center font-weight-normal">NATWOM</h1>
+    </div>
+
+    <!--Log-in, Favoritos, Bossa compra, search-->
+    <div class="col-sm-12 col-lg-3">
+      <div class="row align-items-center">
+            <div class="col-sm-6 col-lg-12 d-flex justify-content-center">
+              <a href="#" data-toggle="modal" data-target="#modalRegistre" class="p-2 text-body">Registrate</a>
+              <a href="#" data-toggle="modal" data-target="#modalLogin" class="p-2 text-body"><i class="far fa-user">Log in</i></a>
+              <a href="#" class="p-2 text-body"><i class="far fa-heart"></i>Favoritos</a>
+              <a href="#" class="p-2 text-body"><i class="fas fa-shopping-bag"></i>Bolsa</a>
+            </div>
+
+          <div class="col-sm-6 col-lg-12 d-flex align-content-center justify-content-center mt-2">
+            <div class="input-group d-flex justify-content-center">
+              <div class="form-outline d-flex align-items-center justify-content-row">
+
+                <input type="search" id="form1" placeholder="search" class="form-control"/>
+                <label class="form-label" for="form1"></label>
+                
+                <button id="search-button" type="button" onclick="searchValidar()"  class="btn btn-secondary mr-2">
+                  <i class="fas fa-search"></i>
+                </button>
+
+                <div class="invalid-feedback" id="errorSearch"></div>
+
+              </div>
+            </div>    
+        </div>
+
+      </div>
+    </div> 
+      </div>
+    </div>
+  </div> 
+  </div>
+
+
+
+<!--MENU NAVEGACIO-->
+  <div class="row d-flex justify-content-center mt-3 bg-dark sticky-top">
+    <div class="col-sm-7 d-flex justify-content-center">
+      <nav class="navbar navbar-expand-md container-fluid d-flex justify-content-center navbar-dark">
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav container-fluid d-flex justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novedades</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Prendas</a> 
+            
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Vestidos</a>
+                <a class="dropdown-item" href="#">Camisetas-Tops</a>
+                <a class="dropdown-item" href="#">Jerseis-Chaquetas</a>
+                <a class="dropdown-item" href="#">Blusas</a>
+                <a class="dropdown-item" href="#">Faldas</a>
+                <a class="dropdown-item" href="#">Pantalones-shorts</a>
+                <a class="dropdown-item" href="#">Parkas-Gabardinas</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promociones</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+        </ul>   
+      </div>
+    </nav>
+   </div>
+  </div>
+
+  <!--COLECCIO PRIMAVERA-ESTIU IMATGE-->
+  <div class="row d-flex bg-image" style="background-image:url(img/poppy-5296176_1280.jpg);background-repeat: no-repeat;background-size: cover; background-position: center top;">
+
+    <div class="col-sm-12 mt-4">
+    <h2 class="display-4 text-center">Coleccion Primavera-Verano 2021</h2>
+    </div>
+    <div class="col-sm-12 d-flex justify-content-center">
+    <button type="button" class="btn btn-light p-3 my-5">Descubrela ahora</button>
+    </div>
+  </div>
+
+
+ <!--LINKS PRODUCTES--> 
+  <div class="row d-flex justify-content-around mt-4 mx-auto">
+    <div class="col-sm-3">
+      <h3 class="display-5 text-center mt-2 mb-1">CAMISETAS</h3>
+      <a href="#">
+      <img class="img-fluid" src="../Sprint4_N1_Ex1 -FormsValidar/img/t-shirts1280x853.jpg" alt="Camisetas/Tops">
+      </a>
+    </div>
+
+    <div class="col-sm-3">
+      <h3 class="display-5 text-center mt-2 mb-1">VESTIDOS</h3>
+      <a href="#">
+      <img class="img-fluid" src="img/dress_1280x853.jpg" alt="vestido">
+      </a>
+    </div>
+
+    <div class="col-sm-3">
+      <h3 class="display-5 text-center mt-2 mb-1">PANTALONES</h3>
+      <a href="#">
+      <img class="img-fluid" src="img/pants1280x853.jpg" alt="pantalon">
+      </a>
+    </div>
+
+    <div class="col-sm-3">
+      <h3 class="display-5 text-center mt-2 mb-1">JERSEYS</h3>
+      <a href="#">
+      <img class="img-fluid" src="img/sweater1280x853.jpg" alt="jersey">
+      </a>
+    </div>
+  </div>
+
+
+
+<!--SLIDER NOVETATS-->
+  <div class="row d-flex justify-content-center mt-4">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <h2 class="display-4 text-center">Novedad</h2>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="img/jeans_brusa1280x853.jpg" alt="Jeans_Blusa">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/FaldillaSamarreta1280x822.jpg" alt="Falda_Camiseta">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/vestit1280x853.jpg" alt="Vestido blanco">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/samarreta1280x851.jpg" alt="Camiseta">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block img-fluid" src="img/jerseys1280x855.jpg" alt="Jerseis-Chaquetas">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+    </div>
+    <div class="col-sm-3 d-flex justify-content-center align-items-center">
+      <button type="button" class="btn btn-secondary p-3 my-5 mr-md-4">Más Novedades</button>
+    </div>
+  </div>
+
+  <!--PROMOCIONS-->
+  <div class="row d-flex justify-content-center mt-5">
+      <div class="col-sm-6">
+        <h2 class="display-4 text-center">Promociones</h2>
+        <a href="#">
+        <img class="img-fluid" src="img/samarreta1280x853.jpg" alt="Promociones">
+        </a>
+      </div>
+  </div>
+
+
+
+<!--LOG IN MODAL-->
+<div class="modal" id="modalLogin">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light">
+      <!-- Modal header -->
+      <div class="modal-header d-flex justify-content-center bg-dark">
+        <h4 class="modal-title text-white">Log in</h4>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">  
+      <form  class="needs validation" action="#" onsubmit="return loginValidation()">  
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label col-form-label-sm" >Email:</label>
+          <div class="col-sm-12">
+          <!--
+            Per validar el format del email per el input
+            <input type="email" class="form-control" placeholder="Entrar email" id="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  title="invalid format email">
+          -->
+          <!--Per validar el format del email per javascript-->
+          <input type="text" class="form-control" placeholder="Entrar email" id="email">
+          <div class="invalid-feedback" id="errorEmail"></div>
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="pwd" class="col-sm-2 col-form-label col-form-label-sm" >Password:</label>
+          <div class="col-sm-12">
+          <input type="password" class="form-control" placeholder="Entrar password" id="pwd">
+          <div class="invalid-feedback" id="errorPassword"></div>
+          </div>
+        </div>
+        <div class="form-group row form-check">
+          <label class="form-check-label col-sm-2 col-form-label col-form-label-sm">
+            <div class="col-sm-12">
+            <input class="form-check-input" type="checkbox"> Recuerdame
+            </div>
+          </label>
+        </div>
+        <button type="submit" class="btn-block btn-secondary">Log in</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--REGISTRE MODAL-->
+<div class="modal" id="modalRegistre">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light">
+      <!-- Modal header -->
+      <div class="modal-header d-flex justify-content-center bg-dark">
+        <h4 class="modal-title text-white">Registro</h4>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">  
+      <form class="needs validation"  action="#"  onsubmit="return registreValidation()">
+
+        <div class="form-group row">
+          <label for="fname" class="col-sm-2 col-form-label col-form-label-sm">Nombre:</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Entre su nombre" id="fname">
+          <div class="invalid-feedback" id="errorName"></div>
+        </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="lname" class="col-sm-2 col-form-label col-form-label-sm">Apellido:</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Entre su apellido" id="lname">
+          <div class="invalid-feedback" id="errorCognom"></div>
+        </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="emailR" class="col-sm-2 col-form-label col-form-label-sm">Email:</label>
+          <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="Entre su email" id="emailR">
+          <div class="invalid-feedback" id="errorEmailReg"></div>
+        </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="pwdR" class="col-sm-2 col-form-label col-form-label-sm">Password:</label>
+          <div class="col-sm-10">
+          <input type="password" class="form-control" placeholder="Entre su password" id="pwdR">
+          <div class="invalid-feedback" id="errorPasswordReg"></div>
+          <div class="invalid-feedback" id="tipoErrorPasswordNu"></div>
+          <div class="invalid-feedback" id="tipoErrorPasswordLLe"></div>
+          <div class="invalid-feedback" id="tipoErrorPasswordCa"></div>
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="pwdConf" class="col-sm-2 col-form-label col-form-label-sm">Confirmar Password:</label>
+          <div class="col-sm-10">
+          <input type="password" class="form-control" placeholder="Entre su password" id="pwdConf">
+          <div class="invalid-feedback" id="errorPasswordConf"></div>
+          </div>
+        </div>
+
+
+        <div class="form-group row">
+          <label for="prov" class="col-sm-2 col-form-label col-form-label-sm">Provincia:</label>
+          <div class="col-sm-10">
+          <select name="provincia" id="prov" class="form-control">
+            <option value=""></option>
+            <option value="barcelona">Barcelona</option>
+            <option value="tarragona">Tarragona</option>
+            <option value="lleida">LLeida</option>
+            <option value="girona">Girona</option>
+          </select>
+          <div class="invalid-feedback" id="errorProvincia"></div>
+          </div>
+          </div>
+
+
+        <div class="form-group row form-check">
+          <label class="form-check-label  col-sm-2 col-form-label col-form-label-sm"></label>
+            <div class="col-sm-10">
+            <input class="form-check-input" type="checkbox"> Acepto politica de privacidad
+            </div>
+        </div>
+        
+
+        <div class="form-group row form-check">
+          <label class="form-check-label  col-sm-1 col-form-label col-form-label-sm"></label>
+            <div class="col-sm-11">
+            <input class="form-check-input" type="checkbox"> Quiero recibir novedades y comunicaciones comerciales
+            </div>
+        </div>
+
+        </div>
+        <button type="submit" class="btn-block btn-secondary my-4">Registrate ahora</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ <!--FOOTER-->
+<footer class="bg-dark text-center text-white mt-5">
+  <!-- Grid container -->
+  <div class="container-fluid p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i></a>
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i></a>
+      
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Subscribete a nuestra newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">direccion mail</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribete
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+        <!--Grid column-->
+        <div class="col-sm-4 mt-4">
+          <h5 class="text-uppercase">Servicio de atencion al cliente </h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#" class="text-white">Contacta con nosotros</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">Envios</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">Formas de pago</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">Devoluciones y reembolsos</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-sm-4 mt-4">
+          <h5 class="text-uppercase">Aviso Legal</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#" class="text-white">Terminos y condiciones de venta</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">Politica de privacidad</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">Politica de cookies</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-sm-4 mt-4">
+          <h5 class="text-uppercase">La Empresa</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#" class="text-white">Sobre NATWOM</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">Localizacion</a>
+            </li>
+          </ul>
+        </div>
+        
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 NATWOM: Todos los derechos reservados
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</div>
+</div>
+  </div>
+ </div>
+
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="formValidate.js" type="text/javascript"></script>
+</body>
+</html>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
